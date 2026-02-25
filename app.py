@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, jsonify, make_response, sessi
 
 from flask_cors import CORS, cross_origin
 
-app = Flask(name)
+app = Flask(__name__)
 CORS(app)
 
 @app.route('/preguntas')
